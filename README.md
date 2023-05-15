@@ -3,7 +3,7 @@
 Program bypasses the UAC prompt for Admin privileges when running a program.
 
 -   Replace [Example.exe] with the file_path and filename of the target program.
--   Run nonadmin.cmd
+-   Run bypassUAC.cmd
 -   The target program will run as the currently logged in user and bypass the UAC prompt.
 
 # UAC_disable
