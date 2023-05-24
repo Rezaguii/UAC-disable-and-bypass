@@ -8,7 +8,7 @@ Program bypasses the UAC prompt for Admin privileges when running a program.
 
     *start "" /b cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && Example.exe"*
 
-If you like complexity :)
+If you like complexity 🤠
 
     setlocal enabledelayedexpansion & set "__COMPAT_LAYER=RUNASINVOKER" & start "" /min cmd /C "setlocal enabledelayedexpansion ^& (echo ^^^!__COMPAT_LAYER^^^! ^& start "" /min Example.exe)"
 
@@ -20,6 +20,6 @@ This script disables the User Access Control (UAC) in the Windows Registry. Run 
 
     reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 
-If you like complexity :)
+If you like complexity 🤠
 
     setlocal enabledelayedexpansion & set "command=reg.exe" & set "args=ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f" & set "cmd=!command! !args!" & cmd /V /C "!cmd!"
