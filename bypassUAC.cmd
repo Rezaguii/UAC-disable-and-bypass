@@ -1,1 +1,1 @@
-cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" "Example.exe""
+start "" /b cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && Example.exe"
